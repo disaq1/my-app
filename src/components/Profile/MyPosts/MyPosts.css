@@ -1,0 +1,50 @@
+﻿.profile__posts--new_post {
+    position: relative;
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.profile__posts--new_post span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#new_post__textarea {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.profile__posts--new_post button {
+    width: 100px;
+
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    background: gray;
+    padding: 10px;
+
+    transition: 0.2s;
+}
+
+.profile__posts--new_post button:hover {
+    background: #000;
+}
+
+.profile__posts--posts {
+    background: white;
+    border-radius: 5px;
+    padding: 20px 0 20px;
+
+}
+
+.profile__posts--posts span {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+}

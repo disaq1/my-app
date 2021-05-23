@@ -1,0 +1,81 @@
+﻿.profile__posts--post {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.post {
+    position: relative;
+    display: grid;
+    align-items: center;
+
+    grid-template-areas: 
+    "post__avatar post__author ."
+    "post__text post__text post__text"
+    ". . post__btns";
+    grid-template-columns: 70px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 30px;
+    grid-gap: 1px 30px;
+
+    margin: 10px;
+    border: 1px solid;
+}
+
+.post__avatar {
+    grid-area: post__avatar;
+    width: 70px;
+    height: 70px;
+}
+
+.post__avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.post__author {
+    grid-area: post__author;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.post__text {
+    grid-area: post__text;
+    text-align: left;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid gainsboro;
+}
+
+.post__btns {
+    grid-area: post__btns;
+}
+
+.post__btn {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    background: gray;
+
+    position: absolute;
+    bottom: 15px;
+
+    transition: 0.2s;
+}
+
+.post__btn:nth-child(1) {
+    right: 20px;
+}
+.post__btn:nth-child(2) {
+    right: 120px;
+}
+.post__btn:nth-child(3) {
+    left: 20px;
+}
+
+.post__btn:hover {
+    background: red;
+}

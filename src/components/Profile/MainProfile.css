@@ -1,0 +1,55 @@
+﻿.profile {
+    background: #aaaaaa;
+    display: grid;
+
+    grid-template-areas: 
+    "profile__avatar profile__description"
+    "profile__posts profile__posts";
+    grid-gap: 15px;
+    grid-template-columns: 250px 1fr;
+}
+
+.profile__avatar {
+    grid-area: profile__avatar;
+    background: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    height: auto;
+    max-height: 500px;
+    padding: 20px;
+}
+
+.profile__avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.profile__description {
+    grid-area: profile__description;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profile__description--name_amd_surname {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.profile__something {
+    grid-area: profile__something;
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.profile__posts {
+    grid-area: profile__posts;
+    background: #aaaaaa;
+    border-radius: 5px;
+
+    display: grid;
+    grid-gap: 15px;
+}
