@@ -4,8 +4,13 @@
 
     border-radius: 5px;
     box-sizing: border-box;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 15px;
 }
 
 .header img {
-    width: 200px;
+    width: 100px;
 }
