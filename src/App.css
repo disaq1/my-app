@@ -11,7 +11,7 @@ body {
     grid-template-areas: 
     "header header"
     "nav main";
-    grid-template-rows: 110px 1fr;
+    grid-template-rows: 55px 1fr;
     grid-template-columns: 1fr 5fr;
     grid-gap: 15px;
     max-width: 1400px;
@@ -20,4 +20,8 @@ body {
 
 .main {
     grid-area: main;
+}
+
+a {
+    text-decoration: none;
 }
