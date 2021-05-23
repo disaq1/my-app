@@ -1,0 +1,89 @@
+﻿.friends {
+    background: #aaaaaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.friend {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "img name desc btns";
+    grid-template-columns: 1.5fr 2.5fr 5fr 2fr;
+    background: white;
+    margin: 10px 0;
+    padding: 20px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.friend:nth-child(1) {
+    margin: 0;
+}
+
+.name {
+    grid-area: name;
+
+    transition: 0.5s;
+}
+
+.friend:hover .name {
+    transform: translateY(-50px);
+}
+
+.friend img{
+    grid-area: img;
+    width: 200px;
+    padding: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.friend__desc  {
+    border-top: 1px solid gray;
+    grid-area: desc;
+    padding: 20px;
+    margin: 50px 0 0 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.friend:hover .friend__desc {
+    transform: translateX(-260px);
+    opacity: 1;
+}
+
+.btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+}
+
+.btn {
+    margin: 5px 0;
+    padding: 15px 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    background: whitesmoke;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.btn:nth-child(1):hover {
+    background: blue;
+}
+
+.btn:nth-child(2):hover {
+    background: green;
+}
+
+.btn:nth-child(3):hover {
+    background: red;
+}
