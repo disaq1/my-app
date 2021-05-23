@@ -1,6 +1,6 @@
 ﻿.profile__posts--new_post {
     position: relative;
-    background: white;
+    background: #f1f1f1;
     border-radius: 5px;
     padding: 20px;
     display: grid;
@@ -37,7 +37,7 @@
 }
 
 .profile__posts--posts {
-    background: white;
+    background: #f1f1f1;
     border-radius: 5px;
     padding: 20px 0 20px;
 
