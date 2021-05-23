@@ -21,7 +21,7 @@ const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>
             <div className={s.name}>Dialogs</div>
-            <div className={s.search}><input type="search" placeholder="Begin search..."/></div>
+            <div className={s.search}><input type="search" placeholder="Start searching in Dialogs"/></div>
             <div className={s.conference}>New&nbsp;dialog</div>
             <div className={s.dialogsItems}>
                 <Dialog name={dialogsData[0].name} id={dialogsData[0].id}/>

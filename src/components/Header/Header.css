@@ -3,14 +3,32 @@
     background: white;
 
     border-radius: 5px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 250px;
     box-sizing: border-box;
 
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1.2fr 2.15fr;
     grid-gap: 15px;
 }
 
 .header img {
     width: 100px;
+}
+
+
+.header__search {
+    grid-area: search;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.header__search input {
+    width: 360px;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+
+    border-radius: 10px;
 }

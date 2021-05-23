@@ -7,7 +7,7 @@
     "name search conference"
     "dialogsItems dialogsMessage dialogsMessage";
     grid-template-rows: 50px 1fr;
-    grid-template-columns: 3fr 5fr 1fr;
+    grid-template-columns: 3.15fr 5fr 0.85fr;
 }
 
 .name {
@@ -42,6 +42,7 @@
     align-items: center;
     justify-content: center;
     background: white;
+    border: 1px solid black;
     border-radius: 10px;
 
     transition: 0.5s;
@@ -51,10 +52,11 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 8px;
     background: white;
     width: 10px;
     height: 2px;
+    border: none;
     border-radius: 2px;
 }
 
@@ -62,7 +64,7 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 8px;
     background: white;
     width: 10px;
     height: 2px;
@@ -74,14 +76,14 @@
     color: white;
     background: gray;
     cursor: pointer;
-    padding-left: 22px;
-    padding-right: 18px;
+    padding-left: 21px;
+    padding-right: 19px;
 }
 
 .dialogsItems {
     grid-area: dialogsItems;
     border-right: 1px solid gold;
-    padding: 10px 0 10px 10px;
+    padding: 10px;
 }
 
 .dialog:hover {
