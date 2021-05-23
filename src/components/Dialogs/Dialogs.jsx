@@ -4,19 +4,25 @@ import s from './Dialogs.module.css'
 
 const Dialogs = (props) => {
 
-    let dialogsData = [
+    let dialogs = [
         {id:1, name: 'Tanya'},
         {id:2, name: 'Polina'},
         {id:3, name: 'Vlad'},
         {id:4, name: 'Max'},
     ]
 
-    let messagesData = [
+    let messages = [
         {id:1, message: 'Это первые сообщения на русском'},
         {id:2, message: 'Вау, до чего дошёл прогресс'},
         {id:3, message: 'Это ещё что, то ли ещё будет'},
         {id:4, message: 'Вау, какой я гений...<3'},
     ]
+
+    let dialogElements = dialogs.map ( dialog => <Dialog name={dialog.name} id={dialog.id}/> )
+
+    let messageElements = messages.map ( message => <Message message={message.message}/> )
+
+
 
     return (
         <div className={s.dialogs}>
@@ -24,16 +30,10 @@ const Dialogs = (props) => {
             <div className={s.search}><input type="search" placeholder="Start searching in Dialogs"/></div>
             <div className={s.conference}>New&nbsp;dialog</div>
             <div className={s.dialogsItems}>
-                <Dialog name={dialogsData[0].name} id={dialogsData[0].id}/>
-                <Dialog name={dialogsData[1].name} id={dialogsData[1].id}/>
-                <Dialog name={dialogsData[2].name} id={dialogsData[2].id}/>
-                <Dialog name={dialogsData[3].name} id={dialogsData[3].id}/>
+                {dialogElements}
             </div>
             <div className={s.dialogsMessage}>
-                <Message message={messagesData[0].message} />
-                <YourMessage message={messagesData[1].message} />
-                <Message message={messagesData[2].message} />
-                <YourMessage message={messagesData[3].message} />
+                {messageElements}
             </div>
         </div>
     )
