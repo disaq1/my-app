@@ -1,7 +1,8 @@
 ﻿import './MainProfile.css'
 import MyPosts from './MyPosts/MyPosts'
 
-const MainProfile = () => {
+const MainProfile = (props) => {
+
     return (
         <main className="main">
             <div className="profile">
@@ -41,7 +42,7 @@ const MainProfile = () => {
                         <AccountDescription value1="Shortly about myself" value2="IT-deacon" />
                     </div>
                 </div>
-                <MyPosts />
+                <MyPosts posts={props.posts} />
             </div>
         </main>
     )
