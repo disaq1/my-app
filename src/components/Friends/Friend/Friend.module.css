@@ -1,0 +1,77 @@
+﻿.friend {
+    background: whitesmoke;
+    border-top: 1px solid gray;
+    
+    padding: 20px;
+
+    /* max-width: 500px; */
+
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    "img description btns";
+    grid-template-columns: minmax(150px, 12%) 44% 44%;
+    grid-gap: 10px;
+    transition: 0.3s;
+}
+
+.friend:hover {
+    background: white;
+}
+
+.friend img {
+    grid-area: img;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.description {
+    grid-area: description;
+    display: grid;
+
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    font-size: 26px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.status {
+    color: gray;
+}
+
+.btns {
+    grid-area: btns;
+    display: grid;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 10px 20px;
+
+    font-size: 13px;
+    background: whitesmoke;
+
+    transition: 0.3s;
+}
+
+.btn:nth-child(1):hover {
+    color: white;
+    background: green;
+}
+
+.btn:nth-child(2):hover {
+    color: white;
+    background: blue;
+}
+
+.btn:nth-child(3):hover {
+    color: white;
+    background: red;
+}
