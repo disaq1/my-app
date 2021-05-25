@@ -2,7 +2,8 @@
     grid-area: header;
     background: white;
 
-    border-radius: 5px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 250px;
     box-sizing: border-box;
@@ -15,6 +16,8 @@
 
 .header img {
     width: 100px;
+    height: 55px;
+    margin-left: 20px;
 }
 
 
