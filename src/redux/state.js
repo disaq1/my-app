@@ -1,4 +1,6 @@
-﻿let state = {
+﻿import { rerenderEntireTree } from "../render";
+
+let state = {
     profilePage:{
         posts: [//Данные для Profile->All posts->Posts (Посты)
             {id:1, name: 'Tanya', message: 'My first post', likesCount: 100},
@@ -7,6 +9,7 @@
             {id:4, name: 'Sanya', message: 'WOAW я тоже могу на русском писать!!! Слава, что ты сделал???', likesCount: 8},
             {id:5, name: 'Vanya', message: 'Ладно, норм соц сетка, красавчик', likesCount: 9999},
         ],
+        // newPostText: 'Sex',
     },
     dialogsPage: {
         dialogs: [//Данные для Dialogs->dialogsItems (Список контактов)
@@ -29,6 +32,23 @@
             {id:3, name: 'Vladislav', surname: 'Kantaria', status: 'А это мой статусс на русском', img: 'https://html5css.ru/w3css/img_avatar3.png'},
         ],
     },
+}
+
+export let addPost = () => {
+    let newPost = {
+        id: 6,
+        name: "Name",
+        message: state.profilePage.newPostText,
+        likesCount: 0
+    };
+    state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree(state);
+}
+
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
 }
 
 export default state;
