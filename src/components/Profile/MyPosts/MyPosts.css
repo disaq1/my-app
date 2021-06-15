@@ -1,50 +1,84 @@
 ﻿.profile__posts--new_post {
     position: relative;
-    background: #f1f1f1;
-    border-radius: 5px;
-    padding: 20px;
+    background: linear-gradient(45deg, rgba(228,255,255,1), rgba(226, 255, 255, 1));
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+
+    padding: 25px;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "span ."
+    "textarea btns"
+    "addPostBtn .";
+    grid-template-columns: 380px 240px;
 }
 
 .profile__posts--new_post span {
-    font-size: 20px;
-    font-weight: 700;
+    grid-area: span;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 #new_post__textarea {
+    grid-area: textarea;
     padding: 20px;
     font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+
+    resize: none;
+}
+
+.new_post--btns {
+    grid-area: btns;
+    display: grid;
+}
+
+.new_post--btns button {
+    margin-bottom: 18px;
+}
+
+.new_post--btns button:last-child {
+    margin: 0;
 }
 
 .profile__posts--new_post button {
-    width: 100px;
-
-    border: none;
-    border-radius: 10px;
+    width: 240px;
+    height: 40px;
+    border-radius: 50px;
     color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-align: center;
-    background: gray;
-    padding: 10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 221, 221, 1));
 
-    transition: 0.2s;
+    transition: 0.3s;
+}
+
+.new_post--addPostBtn {
+    grid-area: addPostBtn;
 }
 
 .profile__posts--new_post button:hover {
-    background: #000;
+    background: rgba(255, 170, 0, 1);
 }
 
 .profile__posts--posts {
-    background: #f1f1f1;
-    border-radius: 5px;
-    padding: 20px 0 20px;
+    background: linear-gradient(45deg, rgba(228,255,255,1), rgba(226, 255, 255, 1));
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 20px 0 0;
 
 }
 
 .profile__posts--posts span {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
     padding: 20px;
 }
