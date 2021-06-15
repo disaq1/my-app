@@ -1,35 +1,109 @@
 ﻿.profile {
-    background: #aaaaaa;
+    background: transparent;
     display: grid;
 
     grid-template-areas: 
-    "profile__avatar profile__description"
-    "profile__posts profile__posts";
-    grid-gap: 15px;
-    grid-template-columns: 400px 1fr;
+    "profile__name profile__extraMenu"
+    "profile__avatar profile__posts"
+    "profile__description profile__posts";
+    grid-gap: 20px;
+    grid-template-columns: 400px 690px;
+    grid-template-rows: 70px 310px 1fr;
+}
+.profile__name {
+    grid-area: profile__name;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+
+    background: linear-gradient(45deg, rgba(228,255,255,1), rgba(226, 255, 255, 1));
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+
+    padding: 18px 0 18px 40px;
+}
+
+.profile__extraMenu {
+    grid-area: profile__extraMenu;
+
+    background: linear-gradient(45deg, rgba(228,255,255,1), rgba(226, 255, 255, 1));
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 25px;
+}
+
+.profile__extraMenu button {
+    width: 240px;
+    height: 40px;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 221, 221, 1));
+
+    transition: 0.3s;
+}
+
+.profile__extraMenu button:hover {
+    background: rgba(255, 170, 0, 1);
 }
 
 .profile__avatar {
     grid-area: profile__avatar;
-    background: white;
-    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(225, 225, 225, 0.5), rgba(0, 221, 221, 0.5));
+    box-shadow: 0 5px 35px  rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
     box-sizing: border-box;
 
-    height: auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: max-content;
+    padding: 25px;
 }
 
 .profile__avatar img{
-    width: 100%;
-    max-height: 360px;
+    width: 250px;
+    max-height: 250px;
     border-radius: 10px;
+
+    padding: 4px;
+    background: linear-gradient(45deg, rgba(228,255,255,0.2), rgba(226, 255, 255, 0.2));
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
 }
 
 .profile__description {
     grid-area: profile__description;
-    background: white;
+    background: linear-gradient(45deg, rgba(228,255,255,1), rgba(226, 255, 255, 1));
+    box-shadow: 0 5px 35px  rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
     padding: 20px;
-    border-radius: 5px;
+    height: max-content;
+}
+
+.profile__description--title {
+    text-align: center;
+    margin: auto;
+    padding: 11px 76px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .info__block {
@@ -37,18 +111,24 @@
     border-bottom: 1px solid gray;
 }
 
-.profile__desc--name {
-    font-size: 26px;
-    line-height: 25px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
+.info__block--notMain-active {
+    display: none;
+}
+
+.info__block:last-child {
+    border: none;
 }
 
 .profile__desc {
-    font-size: 13px;
-    font-weight: 400;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
 
 .span1 {
@@ -60,18 +140,11 @@
     font-weight: 500;
 }
 
-.profile__something {
-    grid-area: profile__something;
-    background: white;
-    border-radius: 5px;
-    padding: 20px;
-}
-
 .profile__posts {
     grid-area: profile__posts;
-    background: #aaaaaa;
+    background: transparent;
     border-radius: 5px;
 
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 20px;
 }
