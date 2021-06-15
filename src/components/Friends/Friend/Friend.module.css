@@ -1,22 +1,29 @@
 ﻿.friend {
     background: whitesmoke;
-    border-top: 1px solid gray;
-    
     padding: 20px;
-
-    /* max-width: 500px; */
-
+    border: 1px solid #e0e0e0;
+    max-width: 500px;
+    border-radius: 5px;
     display: grid;
     align-items: center;
     grid-template-areas: 
     "img description btns";
-    grid-template-columns: minmax(150px, 12%) 44% 44%;
+    grid-template-columns: 100px 40% 40%;
     grid-gap: 10px;
     transition: 0.3s;
 }
 
 .friend:hover {
+    border: 1px solid white;
+    border-radius: 10px;
     background: white;
+}
+
+.friend:hover .btn {
+    opacity: 1;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .friend img {
@@ -34,7 +41,7 @@
 }
 
 .name {
-    font-size: 26px;
+    font-size: 16px;
     line-height: 25px;
     font-weight: 700;
 }
@@ -47,31 +54,33 @@
     grid-area: btns;
     display: grid;
     justify-content: center;
+    
 }
 
 .btn {
-    border: none;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 10px 20px;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
 
-    font-size: 13px;
-    background: whitesmoke;
-
-    transition: 0.3s;
+    transition: 0.2s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: white;
 }
 
-.btn:nth-child(1):hover {
+.btn:hover {
     color: white;
-    background: green;
-}
-
-.btn:nth-child(2):hover {
-    color: white;
-    background: blue;
+    background: black;
 }
 
 .btn:nth-child(3):hover {
     color: white;
     background: red;
+}
+
+.btn {
+    opacity: 0;
 }
