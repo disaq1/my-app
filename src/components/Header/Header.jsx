@@ -3,7 +3,10 @@
 const Header = () => {
     return (
         <header className="header">
-            <img src='https://www.mylogo.com.au/wp-content/uploads/2020/03/mylogo02.png' />
+            <span className="logo">
+                CardsNet
+            </span>
+            {/* <img src='https://www.mylogo.com.au/wp-content/uploads/2020/03/mylogo02.png' /> */}
             <div className="header__items">
                 <div className="header__item">
                     <div className="header__search"><input type="search" placeholder="Global search"/></div>
