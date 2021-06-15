@@ -15,10 +15,15 @@ const Friends = (props) => {
 
     return (
         <div className={s.friends}>
+            <div className={s.pageName}>
+                Friends
+            </div>
             <div className={s.search}>
                 <input type="search" placeholder="Start searching in Friends"/>
             </div>
-            {friends}
+            <div className={s.friendsList}>
+                {friends}
+            </div>
         </div>
     )
 }
