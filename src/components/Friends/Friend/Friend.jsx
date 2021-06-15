@@ -14,9 +14,15 @@ const Friend = (props) => {
                 </span>
             </div>
             <div className={s.btns}>
-                <button className={s.btn}>Write message</button>
-                <button className={s.btn}>Edit friend lists</button>
-                <button className={s.btn}>Unfriend</button>
+                <button className={s.btn}>
+                    <span>Write message</span>
+                </button>
+                <button className={s.btn}>
+                    <span>Edit friend lists</span>
+                </button>
+                <button className={s.btn}>
+                    <span>Unfriend</span>
+                </button>
             </div>
         </div>
     )
