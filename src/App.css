@@ -11,11 +11,15 @@ body {
     grid-template-areas: 
     "header header ."
     "nav main main";
-    grid-template-rows: 55px 1fr;
-    grid-template-columns: 1fr 1.8fr 3.2fr;
-    grid-gap: 15px;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 180px 400px 690px;
+    grid-gap: 20px;
     max-width: 1400px;
-    margin: 10px auto;
+    margin: auto;
+    padding: 45px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgba(0, 221, 221, 0.5), rgba(255, 255, 255, 0.5));
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
 }
 
 .main {
@@ -24,4 +28,8 @@ body {
 
 a {
     text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
