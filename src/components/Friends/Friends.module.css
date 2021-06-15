@@ -2,11 +2,24 @@
     background: whitesmoke;
     padding: 20px;
     border-radius: 5px;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    "pageName search"
+    "friendsList friendsList";
+    grid-template-columns: 1fr 10fr;
+}
+
+.pageName {
+    grid-area: pageName;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 20px 20px 0;
 }
 
 .search {
-    margin: 0;
-    padding: 0 0 20px 0;
+    grid-area: search;
+    margin: 0 20px 20px;
 }
 
 .search input {
@@ -16,4 +29,11 @@
     outline: none;
 
     border-radius: 10px;
+}
+
+.friendsList {
+    grid-area: friendsList;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
