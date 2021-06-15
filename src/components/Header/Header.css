@@ -1,25 +1,25 @@
 ﻿.header {
     grid-area: header;
-    background: white;
+    background: linear-gradient(45deg, rgba(228,255,255,1), rgba(226, 255, 255, 1));
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
 
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 250px;
+    border-radius: 30px;
     box-sizing: border-box;
 
-    display: grid;
+    display: flex;
+    padding: 10px 20px;
     align-items: center;
-    grid-template-columns: 1.2fr 2.15fr;
-    grid-gap: 15px;
 }
 
-.header img {
-    width: 100px;
-    height: 55px;
-    margin-left: 20px;
+.logo {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: #1d5dc3;
 }
-
 
 .header__search {
     grid-area: search;
@@ -33,5 +33,5 @@
     padding: 0 10px;
     outline: none;
 
-    border-radius: 10px;
+    border-radius: 20px;
 }
