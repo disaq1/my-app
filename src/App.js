@@ -11,6 +11,7 @@ import Photos from './components/Photos/Photos';
 import Videos from './components/Videoss/Videos';
 import Novosti from './components/Novosti/Novosti';
 import Settingss from './components/Settingss/Settingss';
+import { addPost } from './redux/state';
 
 
 
@@ -35,6 +36,9 @@ const App = (props) => {
                             render={ () => 
                             <MainProfile 
                                 posts={props.state.profilePage.posts}
+                                newPostText={props.state.profilePage.newPostText}
+                                addPost={props.addPost}
+                                updateNewPostText={props.updateNewPostText}
                             />
                         }
                     />
