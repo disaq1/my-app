@@ -2,8 +2,8 @@
     background: whitesmoke;
     padding: 20px;
     border: 1px solid #e0e0e0;
-    max-width: 500px;
-    border-radius: 5px;
+    max-width: 340px;
+    border-radius: 50px;
     display: grid;
     align-items: center;
     grid-template-areas: 
